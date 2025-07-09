@@ -4,6 +4,7 @@
 
 ```bash
 pip install git+https://github.com/NetworkSofifi/scrapy-socks5h.git
+```
 
 ## Scrapy Settings
 
@@ -14,6 +15,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 
 HTTP_PROXY = 'socks5h://10.100.100.1:9050'  # WireGuard Tor Ga
+```
 
 ## Verification
 
@@ -21,3 +23,4 @@ Test .onion connectivity using:
 
 ```bash
 curl --socks5-hostname 10.100.100.1:9050 http://check.torproject.org
+```
