@@ -1,14 +1,16 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 
 # C extensions
 *.so
 
-
 # Distribution / packaging
 .Python
 env/
+venv/
 build/
 develop-eggs/
 dist/
@@ -23,9 +25,42 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*.whl
 setup.cfg
 MANIFEST
-/.tox/
-/3proxy.conf
-/.cache/
-/.env/
+pip-wheel-metadata/
+
+# Virtualenv environment variables
+.env/
+.venv/
+.python-version
+
+# Pytest
+.cache/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# VS Code / JetBrains IDE
+.vscode/
+.idea/
+
+# Custom to your repo
+3proxy.conf
+test/bin/
+test/util.py
+test/test_pysocks.py.disabled
+
+# Logs & other runtime artifacts
+*.log
+*.sqlite3
+*.pid
+*.db
+
+# Jupyter notebooks (if you ever add docs/examples)
+.ipynb_checkpoints/
+
+# MacOS & system
+.DS_Store
+Thumbs.db
